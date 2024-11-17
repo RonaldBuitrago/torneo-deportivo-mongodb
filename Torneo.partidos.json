@@ -1,0 +1,80 @@
+[{
+  "_id": "49",
+  "fecha": {
+    "$date": "2024-11-20T15:00:00.000Z"
+  },
+  "ubicacion": "Estadio Metropolitano",
+  "equipo_local": "Colombia",
+  "equipo_visitante": "Argentina",
+  "arbitros": [
+    "HAIDARI Yasmin",
+    "HAMITI Eldorjan"
+  ],
+  "resultado": {
+    "goles_local": 2,
+    "goles_visitante": 1,
+    "detalles": [
+      {
+        "minuto": 15,
+        "jugador": "Kevin Duvan Castaño Gil",
+        "equipo": "Colombia",
+        "accion": "gol"
+      },
+      {
+        "minuto": 35,
+        "jugador": "Lionel Messi",
+        "equipo": "Argentina",
+        "accion": "gol"
+      },
+      {
+        "minuto": 70,
+        "jugador": "Roger Martínez",
+        "equipo": "Colombia",
+        "accion": "gol"
+      }
+    ]
+  }
+},
+{
+  "_id": "50",
+  "fecha": {
+    "$date": "2024-11-22T18:00:00.000Z"
+  },
+  "ubicacion": "Estadio Nacional",
+  "equipo_local": "Perú",
+  "equipo_visitante": "Brasil",
+  "arbitros": [
+    "BEKOUASSA Lotfi",
+    "BEKOUASSA Lotfi"
+  ],
+  "resultado": {
+    "goles_local": 1,
+    "goles_visitante": 3,
+    "detalles": [
+      {
+        "minuto": 10,
+        "jugador": "Igor Jesus Maciel da Cruz",
+        "equipo": "Brasil",
+        "accion": "gol"
+      },
+      {
+        "minuto": 45,
+        "jugador": "Igor Jesus Maciel da Cruz",
+        "equipo": "Brasil",
+        "accion": "gol"
+      },
+      {
+        "minuto": 60,
+        "jugador": "Luis Alejandro Ramos Leiva",
+        "equipo": "Perú",
+        "accion": "gol"
+      },
+      {
+        "minuto": 75,
+        "jugador": "Igor Jesus Maciel da Cruz",
+        "equipo": "Brasil",
+        "accion": "gol"
+      }
+    ]
+  }
+}]
