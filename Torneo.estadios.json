@@ -1,0 +1,28 @@
+[{
+  "_id": 1,
+  "nombre": "Estadio Maracaná",
+  "ubicacion": "Río de Janeiro, Brasil",
+  "capacidad": 78838,
+  "anioInauguracion": 1950
+},
+{
+  "_id": 2,
+  "nombre": "Estadio Monumental",
+  "ubicacion": "Buenos Aires, Argentina",
+  "capacidad": 70074,
+  "anioInauguracion": 1938
+},
+{
+  "_id": 3,
+  "nombre": "Estadio Nacional",
+  "ubicacion": "Lima, Perú",
+  "capacidad": 50086,
+  "anioInauguracion": 1952
+},
+{
+  "_id": 4,
+  "nombre": "Estadio Metropolitano Roberto Meléndez",
+  "ubicacion": "Barranquilla, Colombia",
+  "capacidad": 46000,
+  "anioInauguracion": 1986
+}]
