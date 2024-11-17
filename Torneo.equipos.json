@@ -1,0 +1,345 @@
+[{
+  "_id": "equipoA",
+  "nombre": "Colombia",
+  "entrenador": {
+    "nombre": "Nestor Lorenzo",
+    "edad": 58,
+    "experiencia": "10 años"
+  },
+  "jugadores": [
+    {
+      "_id": "01",
+      "nombre": "David Ospina",
+      "posicion": "Portero",
+      "edad": 25,
+      "numero": 12
+    },
+    {
+      "_id": "02",
+      "nombre": "Carlos Cuesta",
+      "posicion": "Defensa",
+      "edad": 24,
+      "numero": 14
+    },
+    {
+      "_id": "03",
+      "nombre": "Juan Cabal",
+      "posicion": "Defensa",
+      "edad": 23,
+      "numero": 15
+    },
+    {
+      "_id": "04",
+      "nombre": "Stefan Medina",
+      "posicion": "Defensa",
+      "edad": 24,
+      "numero": 16
+    },
+    {
+      "_id": "05",
+      "nombre": "Jhon Lucumí",
+      "posicion": "Defensa",
+      "edad": 22,
+      "numero": 18
+    },
+    {
+      "_id": "06",
+      "nombre": "Kevin Duvan Castaño Gil",
+      "posicion": "Centrocampista",
+      "edad": 23,
+      "numero": 20
+    },
+    {
+      "_id": "07",
+      "nombre": "Richard Ríos Montoya",
+      "posicion": "Centrocampista",
+      "edad": 21,
+      "numero": 22
+    },
+    {
+      "_id": "08",
+      "nombre": "Carlos Andrés Gómez Hinestroza",
+      "posicion": "Centrocampista",
+      "edad": 24,
+      "numero": 25
+    },
+    {
+      "_id": "09",
+      "nombre": "Jefferson Lerma",
+      "posicion": "Centrocampista",
+      "edad": 25,
+      "numero": 26
+    },
+    {
+      "_id": "10",
+      "nombre": "Jhon Córdoba",
+      "posicion": "Delantero",
+      "edad": 22,
+      "numero": 30
+    },
+    {
+      "_id": "11",
+      "nombre": "Roger Martínez",
+      "posicion": "Delantero",
+      "edad": 20,
+      "numero": 32
+    }
+  ]
+},
+{
+  "_id": "equipoB",
+  "nombre": "Argentina",
+  "entrenador": {
+    "nombre": "Lionel Scaloni",
+    "edad": 62,
+    "experiencia": "10 años"
+  },
+  "jugadores": [
+    {
+      "_id": "12",
+      "nombre": "Franco Armani",
+      "posicion": "Portero",
+      "edad": 25,
+      "numero": 12
+    },
+    {
+      "_id": "13",
+      "nombre": "Facundo Medina",
+      "posicion": "Defensa",
+      "edad": 22,
+      "numero": 15
+    },
+    {
+      "_id": "14",
+      "nombre": "Lucas Martínez",
+      "posicion": "Defensa",
+      "edad": 24,
+      "numero": 19
+    },
+    {
+      "_id": "15",
+      "nombre": "Nehuén Pérez",
+      "posicion": "Defensa",
+      "edad": 23,
+      "numero": 18
+    },
+    {
+      "_id": "16",
+      "nombre": "Lisandro Martínez",
+      "posicion": "Defensa",
+      "edad": 21,
+      "numero": 14
+    },
+    {
+      "_id": "17",
+      "nombre": "Gonzalo Montiel",
+      "posicion": "Centrocampista",
+      "edad": 25,
+      "numero": 17
+    },
+    {
+      "_id": "18",
+      "nombre": "Leandro Paredes",
+      "posicion": "Centrocampista",
+      "edad": 22,
+      "numero": 16
+    },
+    {
+      "_id": "19",
+      "nombre": "Roberto Pereyra",
+      "posicion": "Centrocampista",
+      "edad": 24,
+      "numero": 13
+    },
+    {
+      "_id": "20",
+      "nombre": "Julián Álvarez",
+      "posicion": "Delantero",
+      "edad": 20,
+      "numero": 11
+    },
+    {
+      "_id": "21",
+      "nombre": "Lionel Messi",
+      "posicion": "Delantero",
+      "edad": 25,
+      "numero": 10
+    }
+  ]
+},
+{
+  "_id": "equipoC",
+  "nombre": "Perú",
+  "entrenador": {
+    "nombre": "Jorge Fossati",
+    "edad": 71,
+    "experiencia": "10 años"
+  },
+  "jugadores": [
+    {
+      "_id": 22,
+      "nombre": "Pedro David Gallese Quiroz",
+      "posicion": "Portero",
+      "edad": 25,
+      "numero": 12
+    },
+    {
+      "_id": 23,
+      "nombre": "Luis Abram",
+      "posicion": "Defensa",
+      "edad": 22,
+      "numero": 15
+    },
+    {
+      "_id": 24,
+      "nombre": "Aldo Sebastián Corzo Chávez",
+      "posicion": "Defensa",
+      "edad": 24,
+      "numero": 13
+    },
+    {
+      "_id": 25,
+      "nombre": "Renzo Renato Garcés Mori",
+      "posicion": "Defensa",
+      "edad": 23,
+      "numero": 17
+    },
+    {
+      "_id": 26,
+      "nombre": "Carlos Augusto Zambrano Ochandarte",
+      "posicion": "Defensa",
+      "edad": 21,
+      "numero": 18
+    },
+    {
+      "_id": 27,
+      "nombre": "Jorge Salvador Murrugarra Torres",
+      "posicion": "Centrocampista",
+      "edad": 24,
+      "numero": 8
+    },
+    {
+      "_id": 28,
+      "nombre": "Jesús Abdallah Castillo Molina",
+      "posicion": "Centrocampista",
+      "edad": 22,
+      "numero": 6
+    },
+    {
+      "_id": 29,
+      "nombre": "Marcos Johan López Lanfranco",
+      "posicion": "Centrocampista",
+      "edad": 25,
+      "numero": 19
+    },
+    {
+      "_id": 30,
+      "nombre": "Andy Jorman Polo Andrade",
+      "posicion": "Centrocampista",
+      "edad": 23,
+      "numero": 7
+    },
+    {
+      "_id": 31,
+      "nombre": "Luis Alejandro Ramos Leiva",
+      "posicion": "Delantero",
+      "edad": 22,
+      "numero": 9
+    },
+    {
+      "_id": 32,
+      "nombre": "Christian Alberto Cueva Bravo",
+      "posicion": "Delantero",
+      "edad": 24,
+      "numero": 10
+    }
+  ]
+},
+{
+  "_id": "equipoD",
+  "nombre": "Brasil",
+  "entrenador": {
+    "nombre": "Dorival Junior",
+    "edad": 62,
+    "experiencia": "10 años"
+  },
+  "jugadores": [
+    {
+      "_id": "34",
+      "nombre": "Alisson Becker",
+      "posicion": "Portero",
+      "edad": 24,
+      "numero": 12
+    },
+    {
+      "_id": "35",
+      "nombre": "Danilo",
+      "posicion": "Defensa",
+      "edad": 22,
+      "numero": 15
+    },
+    {
+      "_id": "36",
+      "nombre": "Léo Ortiz",
+      "posicion": "Defensa",
+      "edad": 23,
+      "numero": 18
+    },
+    {
+      "_id": "37",
+      "nombre": "Rodrigo Caio",
+      "posicion": "Defensa",
+      "edad": 24,
+      "numero": 20
+    },
+    {
+      "_id": "38",
+      "nombre": "Fabrício Bruno",
+      "posicion": "Defensa",
+      "edad": 21,
+      "numero": 16
+    },
+    {
+      "_id": "39",
+      "nombre": "Bruno Guimarães",
+      "posicion": "Centrocampista",
+      "edad": 25,
+      "numero": 8
+    },
+    {
+      "_id": "40",
+      "nombre": "Casemiro",
+      "posicion": "Centrocampista",
+      "edad": 23,
+      "numero": 14
+    },
+    {
+      "_id": "41",
+      "nombre": "Vinícius Júnior",
+      "posicion": "Centrocampista",
+      "edad": 20,
+      "numero": 11
+    },
+    {
+      "_id": "42",
+      "nombre": "David Neres",
+      "posicion": "Centrocampista",
+      "edad": 22,
+      "numero": 17
+    },
+    {
+      "_id": "43",
+      "nombre": "Matheus Cunha",
+      "posicion": "Delantero",
+      "edad": 25,
+      "numero": 10
+    },
+    {
+      "_id": "44",
+      "nombre": "Igor Jesus Maciel da Cruz",
+      "posicion": "Delantero",
+      "edad": 21,
+      "numero": 9
+    }
+  ]
+}]
