@@ -1,0 +1,1 @@
+mongod --port27017 --replSet rsTorneo --dbpath="C:\data\db"
