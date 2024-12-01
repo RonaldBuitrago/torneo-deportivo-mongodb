@@ -1,0 +1,2 @@
+rs.add({host: "127.0.0.1:27018", priority: 0.5, votes: 1})
+rs.add({host: "127.0.0.1:27019", priority: 0, votes: 0})
