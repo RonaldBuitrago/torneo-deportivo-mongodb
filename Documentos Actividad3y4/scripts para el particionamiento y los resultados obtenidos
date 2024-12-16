@@ -1,0 +1,106 @@
+#Creacion de carpetas
+mkdir p1_1 p1_2 p1_3 p2_1 p2_2 p2_3 p3_1 p3_2 p3_3
+
+#Creacion carpetas de configuración.
+mkdir cfg1 cfg2 cfg3
+
+
+#Cracion de los servidores de Configuracion..
+
+mongod --configsvr --replSet configrs --port 27022 --dbpath cfg1 --logpath cfg1\log.cfg --logappend
+mongod --configsvr --replSet configrs --port 27023 --dbpath cfg2 --logpath cfg2\log.cfg --logappend
+mongod --configsvr --replSet configrs --port 27024 --dbpath cfg3 --logpath cfg3\log.cfg --logappend
+
+#Creacion de los 3 servidores
+
+mongosh --port 27022
+conf= {_id: "configrs",
+	   members: [{_id:0, host:"127.0.0.1:27022" },
+		     {_id:1, host:"127.0.0.1:27023" },
+		     {_id:2, host:"127.0.0.1:27024" },]}
+
+#inicializar
+rs.initiate(conf)
+
+
+#configuracion servidores Sharding
+
+mongod --shardsvr --replSet p1 --port 27049 --logpath p1_1/log --dbpath "c:\data\p1_1" --logappend --oplogSize 50 
+mongod --shardsvr --replSet p1 --port 27050 --logpath p1_2/log --dbpath "c:\data\p1_2" --logappend --oplogSize 50 
+mongod --shardsvr --replSet p1 --port 27051 --logpath p1_3/log --dbpath "c:\data\p1_3" --logappend --oplogSize 50 
+
+mongod --shardsvr --replSet p2 --port 27059 --logpath p2_1/log --dbpath "c:\data\p2_1" --logappend --oplogSize 50 
+mongod --shardsvr --replSet p2 --port 27060 --logpath p2_2/log --dbpath "c:\data\p2_2" --logappend --oplogSize 50 
+mongod --shardsvr --replSet p2 --port 27061 --logpath p2_3/log --dbpath "c:\data\p2_3" --logappend --oplogSize 50 
+
+mongod --shardsvr --replSet p3 --port 27069 --logpath p3_1/log --dbpath "c:\data\p3_1" --logappend --oplogSize 50 
+mongod --shardsvr --replSet p3 --port 27070 --logpath p3_2/log --dbpath "c:\data\p3_2" --logappend --oplogSize 50 
+mongod --shardsvr --replSet p3 --port 27071 --logpath p3_3/log --dbpath "c:\data\p3_3" --logappend --oplogSize 50 
+
+#creacion de los procesos mongos.
+
+mongos --configdb configrs/127.0.0.1:27022,127.0.0.1:27023,127.0.0.1:27024 --logappend --logpath mongos1.log --port 27017
+
+#Activacion de conjuntos replica.
+
+mongosh --port 27049
+config= {_id: "p1",
+		members: [{_id:0, host:"127.0.0.1:27049"},{_id:1, host:"127.0.0.1:27050"},{_id:2, host:"127.0.0.1:27051"}]}
+
+rs.initiate(config)
+rs.status()
+
+mongosh --port 27059
+config= {_id: "p2",
+		members: [{_id:0, host:"127.0.0.1:27059"},{_id:1, host:"127.0.0.1:27060"},{_id:2, host:"127.0.0.1:27061"}]}
+
+rs.initiate(config)
+rs.status()
+
+mongosh --port 27069
+config= {_id: "p3",
+		members: [{_id:0, host:"127.0.0.1:27069"},{_id:1, host:"127.0.0.1:27070"},{_id:2, host:"127.0.0.1:27071"}]}
+
+rs.initiate(config)
+rs.status()
+
+#Colocar en marcha las particiones.
+sh.addShard("p1/127.0.0.1:27049")
+sh.addShard("p2/127.0.0.1:27059")
+sh.addShard("p3/127.0.0.1:27069")
+
+sh.status()
+
+
+
+
+
+mongod --port 27017 --replSet rsTorneo --dbpath="C:\data\db"
+
+mongod --port 27018 --replSet rsTorneo --dbpath="C:\data\db1"
+
+mongod --port 27019 --replSet rsTorneo --dbpath="C:\data\db2"
+
+
+
+})
+
+# Repetir para shardRS2 y shardRS3 con sus respectivos puertos
+
+
+# Iniciar el router
+mongos --configdb configRS/localhost:27019,localhost:27020,localhost:27021 --logappend --logpath mongos1.log
+
+mongos --configdb configRS/localhost:27017,localhost:27018,localhost:27019 --port 27017 --bind_ip localhost --logpath /data/mongos.log
+
+mongos --configdb 192.168.0.18:27022,192.168.0.18:27023,192.168.0.18:27024 --port 27021 --bind_ip 192.168.0.18
+
+
+Mongo --localhost --port 27017
+
+# Añadir shards
+sh.addShard("shardRS1/localhost:27017")
+sh.addShard("shardRS2/localhost:27018")
+sh.addShard("shardRS3/localhost:27019")
+
+
